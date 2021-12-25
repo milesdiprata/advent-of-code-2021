@@ -14,7 +14,10 @@ build: cmake
 day1: build
 	./build/aoc/day1
 
+day2: build
+	./build/aoc/day2
+
 clean:
 	rm -rf build
 
-.PHONY: cmake build day1 clean
+.PHONY: cmake build day1 day2 clean
