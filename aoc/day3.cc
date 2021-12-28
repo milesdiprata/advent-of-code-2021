@@ -56,13 +56,6 @@ size_t aoc::Day3::SolvePart2() {
     int mcb = o2_num_bits[1] >= o2_nums.size() - o2_num_bits[1] ? 1 : 0;
     int lcb = co2_num_bits[0] <= co2_nums.size() - co2_num_bits[0] ? 0 : 1;
 
-    // std::cout << "Position: " << i << '\n';
-    // std::cout << "MCB (O2): " << mcb << '\n';
-    // std::cout << "LCB (CO2): " << lcb << '\n';
-    // for (const auto& n : o2_nums) {
-    //   std::cout << n.to_string() << '\n';
-    // }
-
     for (auto it = o2_nums.begin(); it != o2_nums.end();) {
       if (o2_nums.size() == 1) {
         break;
