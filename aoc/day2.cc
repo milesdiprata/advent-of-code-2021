@@ -95,7 +95,7 @@ std::vector<aoc::Day2::Command> aoc::Day2::ParseCommands() {
     size_t delimeter = line.find(" ");
     std::string direction_name = line.substr(0, delimeter);
     auto direction = Day2::DirectionOf(direction_name);
-    size_t units = std::stoll(line.substr(delimeter, line.size()));
+    size_t units = std::stoull(line.substr(delimeter, line.size()));
 
     if (direction) {
       commands.emplace_back(*direction, units);

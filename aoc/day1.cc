@@ -64,7 +64,7 @@ std::vector<size_t> aoc::Day1::ParseDepths() {
       break;
     }
 
-    depths.push_back(std::stoll(line));
+    depths.push_back(std::stoull(line));
   }
 
   return depths;
